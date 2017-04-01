@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <script>
+            function music(n, a, l, g, p)
+            {
+                this.name = n;
+                this.artist = a;
+                this.like = l;
+                this.genre = g;
+                this.playTime = p;
+                
+                this.likeSong = function()
+                {
+                    like=1;
+                }
+                this.dislikeSong = function()
+                {
+                    like=0;
+                }
+            }
+
+            function playlist(n, g, t)
+            {
+                this.name = n;
+                this.dominantGenre = g;
+                this.time = t;
+                this.musics = [];
+                
+                this.addMusic = function(addedMusic)
+                {
+                    this.musics.push(addedMusic);
+                }
+            }
+
+            function recommend(rl, bl, hl, il, cl, m)
+            {
+                this.rockLike = rl;
+                this.balladLike = bl;
+                this.hiphopLike = hl;
+                this.indieLike = il;
+                this.classicLike = cl;
+                this.mostLikeSong = m;
+            }
+        </script>
+    </body>
+</html>
