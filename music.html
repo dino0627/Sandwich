@@ -16,10 +16,12 @@
                 this.likeSong = function()
                 {
                     like=1;
+                    return;
                 }
                 this.dislikeSong = function()
                 {
                     like=0;
+                    return;
                 }
             }
             function playlist(n, g, t)
@@ -32,21 +34,32 @@
                 this.addMusic = function(addedMusic)
                 {
                     this.musics.push(addedMusic);
+                    return;
                 }
             }
-            function recommend(rl, bl, hl, il, cl, m)
+            function playerFunctions(name)
             {
-                this.rockLike = rl;
-                this.balladLike = bl;
-                this.hiphopLike = hl;
-                this.indieLike = il;
-                this.classicLike = cl;
-                this.mostLikeSong = m;
+                this.name = name;
+                this.musics = [];
+                this.playlists = [];
+                this.function = plusMusic()
+                {
+                    var newMusic = new music(n, a, l, g, p)
+                    this.musics.push(newMusic);
+                    return;
+                }
+                this.function = plusPlaylist(n, g, t)
+                {
+                    var newPlaylist = new playlist(n, g, t)
+                    this.playlists.push(newPlaylist);
+                    return;
+                }
             }
             
-            var whitney = music(whitney, hashswan, 0, hiphop, 219);
+            var whitney = music(whitney, hashswan, 0, hiphop, 193);
             var lethergo = music(lethergo, passenger, 0, ballad, 252);
             var dailylook = music(dailylook, hashswan, 0, hiphop, 261);
+            var tictoc = music(tictoc, madclown, 0, hiphop, hiphop, 235);
 
         </script>
     </body>
